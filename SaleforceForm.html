@@ -1,0 +1,42 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Contacto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Cotiza tu Ruta</h2>
+            <form id="customForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="compania">Compañía:</label>
+                <input type="text" id="compania" name="compania" required>
+
+                <label for="pod">POD:</label>
+                <select id="pod" name="pod" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="LZC">LZC</option>
+                    <option value="MZO">MZO</option>
+                    <option value="MZO, LZC">MZO, LZC</option>
+                </select>
+
+                <label for="contenedor">Contenedor:</label>
+                <select id="contenedor" name="contenedor" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                    <option value="40H">40H</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
